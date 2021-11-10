@@ -1,0 +1,96 @@
+@use "colors";
+@use "fonts";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/app-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px 10px;
+    display: grid;
+    align-items: center;
+
+    font-family: fonts.$ff-primary;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    font-family: fonts.$ff-primary;
+}
+
+// General Styling
+.app {
+    &__inner {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        padding: 2rem 3rem;
+        border-radius: 8px;
+        box-shadow: (#777 3px 3px 4px);
+        opacity: 0.9;
+
+        background: colors.$clr-app-bg;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        font-family: fonts.$ff-title;
+        font-size: 4rem;
+        color: #333;
+    }
+    &__search-btn {
+        padding: 0.5rem 0.8rem;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 4px;
+
+        font-size: 1.5rem;
+        background: colors.$clr-search-btn;
+        box-shadow: (#777 1px 1px 2px);
+
+        transition: 0.2s ease-in-out background;
+
+        &:hover {
+            background: colors.$clr-search-btn-hover;
+        }
+    }
+    &__result {
+        font-size: 1.8rem;
+        color: colors.$clr-result;
+    }
+}
+
+// Styling select
+
+.choose {
+    &__activity {
+        padding: 1rem;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+
+        font-family: fonts.$ff-primary;
+        font-size: 1.5rem;
+        background: colors.$clr-choose;
+    }
+    &__option {
+        background-color: darken(colors.$clr-choose, 20%);
+        &:hover {
+            background-color: yellow;
+        }
+    }
+}
