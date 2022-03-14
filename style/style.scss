@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     background-image: url("../img/app-bg.jpg");
     background-size: cover;
@@ -76,21 +80,91 @@ button {
 
 // Styling select
 
-.choose {
-    &__activity {
-        padding: 1rem;
-        border: 1px solid #aaa;
-        border-radius: 6px;
-        margin-bottom: 1rem;
-
-        font-family: fonts.$ff-primary;
-        font-size: 1.5rem;
-        background: colors.$clr-choose;
+.select {
+    &--show {
+        display: none;
     }
-    &__option {
-        background-color: darken(colors.$clr-choose, 20%);
-        &:hover {
-            background-color: yellow;
+    &-type {
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 1rem;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            background: colors.$clr-choose;
+            & i {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #333;
+                transition: 0.4s transform ease-in-out;
+            }
+            .arrow-rotate {
+                transform: rotate(180deg);
+            }
         }
+        &__title {
+            font-family: fonts.$ff-primary;
+            font-size: 1.5rem;
+            margin-right: 0.8rem;
+        }
+
+        &__item {
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+
+            align-items: center;
+
+            padding: 0.5rem;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+
+            font-family: fonts.$ff-primary;
+            font-size: 1.3rem;
+            background: colors.$clr-choose;
+
+            cursor: pointer;
+            transition: 0.2s background ease-in-out;
+            & i {
+                margin-right: 0.5rem;
+            }
+            & p {
+                text-align: center;
+            }
+            &:hover {
+                background: darken(colors.$clr-choose, 10%);
+            }
+        }
+    }
+}
+
+// Styling select icons
+
+.fa {
+    &-people-arrows {
+        color: #5095f0;
+    }
+    &-couch {
+        color: rgb(102, 79, 49);
+    }
+    &-music {
+        color: #e45858;
+    }
+    &-pencil-ruler {
+        color: #489672;
+    }
+    &-umbrella-beach {
+        color: #f3f724de;
+    }
+    &-hand-holding-heart {
+        color: #e71616;
+    }
+    &-user-graduate {
+        color: #051ceb;
     }
 }

@@ -7,7 +7,7 @@
         <title>Feeling bored?</title>
         <script defer src="./script.js"></script>
         <link rel="stylesheet" href="./style/style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -20,6 +20,48 @@
         <div class="app__container">
             <div class="app__inner">
                 <h1 class="app__title">What to do?</h1>
+
+                <div class="select__top">
+                    <div class="select-type">
+                        <div class="select-type__top" id="select-type__title">
+                            <h2 class="select-type__title">Choose Type of Activity</h2>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <ul class="select-type__options select--show" id="select-type__options">
+                            <li class="select-type__item">
+                                <i class="fas fa-people-arrows"></i>
+                                <p>Social</p>
+                            </li>
+                            <li class="select-type__item">
+                                <i class="fas fa-couch"></i>
+                                <p>Relaxation</p>
+                            </li>
+                            <li class="select-type__item">
+                                <i class="fas fa-music"></i>
+                                <p>Music</p>
+                            </li>
+                            <li class="select-type__item">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <p>DIY</p>
+                            </li>
+                            <li class="select-type__item">
+                                <i class="fas fa-umbrella-beach"></i>
+                                <p>Recreational</p>
+                            </li>
+                            <li class="select-type__item">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <p>Charity</p>
+                            </li>
+                            <li class="select-type__item">
+                                <i class="fas fa-user-graduate"></i>
+                                <p>Education</p>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="select__bottom">
                 <button type="submit" name="app__search" id="app__search" class="app__search-btn">Find Activity</button>
                 <p class="app__result" id="app__result"></p>
             </div>

@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   background-image: url("../img/app-bg.jpg");
   background-size: cover;
@@ -72,18 +76,92 @@ button {
   color: #444;
 }
 
-.choose__activity {
+.select--show {
+  display: none;
+}
+.select-type__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
   border: 1px solid #aaa;
   border-radius: 6px;
   margin-bottom: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  cursor: pointer;
   background: #e6cef1;
 }
-.choose__option {
-  background-color: #be7fda;
+.select-type__top i {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  -webkit-transition: 0.4s -webkit-transform ease-in-out;
+  transition: 0.4s -webkit-transform ease-in-out;
+  transition: 0.4s transform ease-in-out;
+  transition: 0.4s transform ease-in-out, 0.4s -webkit-transform ease-in-out;
 }
-.choose__option:hover {
-  background-color: yellow;
+.select-type__top .arrow-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.select-type__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+}
+.select-type__item {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  background: #e6cef1;
+  cursor: pointer;
+  -webkit-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+}
+.select-type__item i {
+  margin-right: 0.5rem;
+}
+.select-type__item p {
+  text-align: center;
+}
+.select-type__item:hover {
+  background: #d2a6e6;
+}
+
+.fa-people-arrows {
+  color: #5095f0;
+}
+.fa-couch {
+  color: #664f31;
+}
+.fa-music {
+  color: #e45858;
+}
+.fa-pencil-ruler {
+  color: #489672;
+}
+.fa-umbrella-beach {
+  color: #f3f724de;
+}
+.fa-hand-holding-heart {
+  color: #e71616;
+}
+.fa-user-graduate {
+  color: #051ceb;
 }
