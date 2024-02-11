@@ -2,7 +2,7 @@
 
 Bored API is a vanilla JavaScript application made purely for fun and entertainment.
 
-Created with the use of [Bored API](https://github.com/drewthoennes/Bored-API)
+Created with the use of [Bored API](https://github.com/drewthoennes/Bored-API).
 
 > Tools used:
 
@@ -13,7 +13,7 @@ Created with the use of [Bored API](https://github.com/drewthoennes/Bored-API)
 
 # What does it do?
 
-The app provides you with randomly generated activities to pass the time. It lets you choose the type of thing to do from the list below 
+The app provides you with randomly generated activities to pass the time. It lets you choose the type of thing to do from the list below:
 
 - Social
 - Relaxation
@@ -22,7 +22,10 @@ The app provides you with randomly generated activities to pass the time. It let
 - Recreational
 - Charity
 - Education
+<img src="./img/dropdown-menu.jpg" alt="image of dropdown menu" width="650px"/>
 
 # How does it work?
 
-# Contribution
+After `Find Activity` button is clicked data from [Bored API](https://github.com/drewthoennes/Bored-API) is fetched, parsed and displayed for your use.
+
+<img src="./img/fetch-result.jpg" alt="image of dropdown menu" width="650px"/>
